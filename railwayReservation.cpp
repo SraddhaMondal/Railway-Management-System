@@ -173,6 +173,7 @@ class reser
 	char pname[10][100];
 	int age[20];
 	char clas[10];
+	char ch[10];
 	int nosr;
 	int i;
 	int d,m,y;
@@ -232,11 +233,14 @@ class reser
 				cout << "\nHow many persons are military personnels?";
 				cin >> mpn;
 			}
+			
 			cout << "\nDo you want to apply for one more category of concession?";
 			cout << "\nY-Yes\tN-No";
-			cin << ch;
-		} while(ch=='Y'||ch=='y')
-		cout<<"******END OF GETTING DETAILS******\n";
+			cin >> ch;
+		} 
+		while(ch=="Y"||ch=="y");
+		{
+		cout<<"******END OF GETTING DETAILS******\n";}
 	}
 	void displayresdet()
 	{
